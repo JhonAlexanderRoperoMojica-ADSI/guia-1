@@ -1,7 +1,9 @@
-let A = parseInt(prompt("ingrese el valor de A"));
-let B = parseInt(prompt("ingrese el valor de B"));
-let C = parseInt(prompt("ingrese el valor de C"));
+let pi = Math.PI;
+let radio = parseFloat(prompt("ingrese el radio del cilindro"));
+let altura = parseFloat(prompt("Ingrese la altura del cilindro"));
 
-let operacion = (A + 7 * C)/(B + 2 * A) + 2 * B;
+let area = (2 *(pi * Math.pow(radio, 2)) + (2 * pi * radio)* altura);
+let volumen = (pi * Math.pow(radio, 2)) * altura;
 
-document.getElementById('operacion').innerHTML = operacion;
+document.getElementById('area').innerHTML = area;
+document.getElementById('volumen').innerHTML = volumen;
