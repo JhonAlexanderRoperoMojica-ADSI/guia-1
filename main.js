@@ -1,9 +1,8 @@
-let pi = Math.PI;
-let radio = parseFloat(prompt("ingrese el radio del cilindro"));
-let altura = parseFloat(prompt("Ingrese la altura del cilindro"));
+let x = 5;
+let  A  =  parseInt ( prompt ( "ingrese el valor de A" ) );
+let  B  =  parseInt ( prompt ( "ingrese el valor de B " ) );
+let  C  =  parseInt ( prompt ( " ingresar el valor de C " ) );
 
-let area = (2 *(pi * Math.pow(radio, 2)) + (2 * pi * radio)* altura);
-let volumen = (pi * Math.pow(radio, 2)) * altura;
+let operacion = A * Math.pow(x, 2) + B * x + C;
 
-document.getElementById('area').innerHTML = area;
-document.getElementById('volumen').innerHTML = volumen;
+document.getElementById('operacion').innerHTML = operacion;
