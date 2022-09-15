@@ -1,8 +1,9 @@
-let pi = Math.PI;
-let Radio = parseFloat(prompt("Ingrese el radio del circulo"));
+let metros, segundos;
+let kilometros = parseFloat(prompt("Ingrese los kilometros a convertir"));
+let minutos = parseFloat(prompt("Ingrese los minutos a convertir"));
 
-let area = pi * Math.pow(Radio, 2);
-let longitud = 2 * Math.PI * Radio;
+metros = kilometros * 1000;
+segundos = minutos * 60;
 
-document.getElementById('area').innerHTML = area;
-document.getElementById('longitud').innerHTML = longitud;
+document.getElementById('metros').innerHTML = metros;
+document.getElementById('segundos').innerHTML = segundos;
