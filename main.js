@@ -1,9 +1,6 @@
-let metros, segundos;
-let kilometros = parseFloat(prompt("Ingrese los kilometros a convertir"));
-let minutos = parseFloat(prompt("Ingrese los minutos a convertir"));
+let radio = parseFloat(prompt("Ingrese el radio"));
+let pi = Math.PI;
 
-metros = kilometros * 1000;
-segundos = minutos * 60;
+let volumen = 4 / 3 * pi * Math.pow(radio, 3);
 
-document.getElementById('metros').innerHTML = metros;
-document.getElementById('segundos').innerHTML = segundos;
+document.getElementById('volumen').innerHTML = volumen;
