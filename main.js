@@ -1,8 +1,8 @@
-let x = 5;
-let  A  =  parseInt ( prompt ( "ingrese el valor de A" ) );
-let  B  =  parseInt ( prompt ( "ingrese el valor de B " ) );
-let  C  =  parseInt ( prompt ( " ingresar el valor de C " ) );
+let pi = Math.PI;
+let a = parseInt(prompt("Ingrese el número"));
+let b = parseInt(prompt("Ingrese el número"));
+let c = parseInt(prompt("Ingrese el número"));
 
-let operacion = A * Math.pow(x, 2) + B * x + C;
+let volumen = (4/3) * pi * a * b *c;
 
-document.getElementById('operacion').innerHTML = operacion;
+document.getElementById("volumen").innerHTML=volumen;
