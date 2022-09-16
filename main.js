@@ -1,8 +1,9 @@
-let pi = Math.PI;
-let a = parseInt(prompt("Ingrese el número"));
-let b = parseInt(prompt("Ingrese el número"));
-let c = parseInt(prompt("Ingrese el número"));
+let minuto = 355;
+let cantidad = parseInt(prompt("Ingrese la cantidad de minutos a cobrar"));
 
-let volumen = (4/3) * pi * a * b *c;
+let resultado = cantidad * 355;
+let iva = resultado * 0.19;
+let total = resultado+iva;
 
-document.getElementById("volumen").innerHTML=volumen;
+document.getElementById('iva').innerHTML = iva;
+document.getElementById('total').innerHTML = total;
