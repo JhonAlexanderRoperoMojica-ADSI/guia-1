@@ -1,9 +1,8 @@
-let minuto = 355;
-let cantidad = parseInt(prompt("Ingrese la cantidad de minutos a cobrar"));
+let km = parseInt(prompt("Ingrese los kilometros"));
+let hr = parseInt(prompt("Ingrese las horas"));
 
-let resultado = cantidad * 355;
-let iva = resultado * 0.19;
-let total = resultado+iva;
+let mm= km * 1000;
+let seg = hr* 3600;
+let velocidad = mm/seg;
 
-document.getElementById('iva').innerHTML = iva;
-document.getElementById('total').innerHTML = total;
+document.getElementById('velocidad').innerHTML = velocidad + "m/s";
