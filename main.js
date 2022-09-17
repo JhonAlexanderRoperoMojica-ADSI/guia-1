@@ -1,7 +1,8 @@
-let horas_pago = 15300;
-let nombre = prompt("Ingrese el nombre del trabajor");
-let horas = parseFloat(prompt("Ingrese las horas que a trabajado"));
+let nota1 = parseFloat(prompt("Ingrese las primera nota"));
+let nota2 = parseFloat(prompt("Ingrese las segunda nota"));
+let nota3 = parseFloat(prompt("Ingrese las tercera nota"));
+let nota4 = parseFloat(prompt("Ingrese las cuarta nota"));
 
-let pago = horas * horas_pago;
+let promedio = (nota1 + nota2 + nota3 + nota4) / 4;
 
-document.write("el pago de :" + nombre + " es de :" + pago);
+document.getElementById('promedio').innerHTML = promedio;
