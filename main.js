@@ -1,8 +1,5 @@
-let descuento = 0.10;
-let precio = parseFloat(prompt("Ingrese el precio de los medicamentos"));
+let grados = parseFloat(prompt("Ingrese los grados a comvertir"));
 
-let precio_descuento = precio * descuento;
-let total = precio - precio_descuento;
+let Fahrenheit = (grados * (9/5)) + 32;
 
-document.getElementById('precio_descuento').innerHTML = precio_descuento;
-document.getElementById('total').innerHTML = total;
+document.getElementById('Fahrenheit').innerHTML = Fahrenheit;
