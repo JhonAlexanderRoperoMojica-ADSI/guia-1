@@ -1,8 +1,8 @@
-let km = parseInt(prompt("Ingrese los kilometros"));
-let hr = parseInt(prompt("Ingrese las horas"));
+let descuento = 0.10;
+let precio = parseFloat(prompt("Ingrese el precio de los medicamentos"));
 
-let mm= km * 1000;
-let seg = hr* 3600;
-let velocidad = mm/seg;
+let precio_descuento = precio * descuento;
+let total = precio - precio_descuento;
 
-document.getElementById('velocidad').innerHTML = velocidad + "m/s";
+document.getElementById('precio_descuento').innerHTML = precio_descuento;
+document.getElementById('total').innerHTML = total;
